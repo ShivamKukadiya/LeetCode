@@ -7,6 +7,7 @@ public:
         for(int i=0;i<s.size();i++)
         {
             int t=stk.top();
+
             if(t!=-1&&s[i]==')'&&s[t]=='(')
             {
                 stk.pop();
