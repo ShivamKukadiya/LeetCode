@@ -24,5 +24,6 @@ public:
         int leftd=diameterOfBinaryTree(root->left);
         int rightd=diameterOfBinaryTree(root->right);
         return max(diameter,max(leftd,rightd));
+        // return diameter;
     }
 };
