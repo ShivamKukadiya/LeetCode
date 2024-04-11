@@ -15,7 +15,6 @@ public:
             result.push_back(digit);
         }
         result.resize(keep);
-        // Remove leading zeros
         int s = 0;
         while (s < result.length() && result[s] == '0') {
             s++;
