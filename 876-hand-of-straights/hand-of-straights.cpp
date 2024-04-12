@@ -1,20 +1,19 @@
 class Solution {
 public:
-    bool isNStraightHand(vector<int>& hand, int g) {
-        unordered_map<int,int>mpp;
-        for(int cap : hand){
-            // cap[hand[i]]++;
+    bool isNStraightHand(vector<int>& hand, int groupSize) {
+        map<int, int> mpp;
+        for (int cap : hand) {
             mpp[cap]++;
         }
         sort(hand.begin(),hand.end());
-        for(int i = 0; i < hand.size(); i++){
-
-            if(mpp[hand[i]] == 0){
+        for (int i = 0; i < hand.size(); i++) {
+            if (mpp[hand[i]] == 0) {
                 continue;
             }
-            for(int  j = 0; j < g; j++){
+            for (int j = 0; j < groupSize; j++) {
+                // if(mpp[]] == 0)
                 int curd = hand[i] + j;
-                if(mpp[curd] == 0){
+                if (mpp[curd] == 0) {
                     return false;
                 }
                 mpp[curd]--;
