@@ -13,8 +13,7 @@ public:
             vp.push_back({score[i], i});
         }
         for (int i = 0; i < score.size(); i++) {
-            for (int j = 0; j < score.size() - 1;
-                 j++) { // Adjusted loop condition
+            for (int j = 0; j < score.size() - 1; j++) { 
                 if (vp[j].first < vp[j + 1].first) {
                     swap(vp[j], vp[j + 1]);
                 }
