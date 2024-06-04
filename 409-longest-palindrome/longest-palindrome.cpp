@@ -20,6 +20,6 @@ public:
                 ans += i.second;
             }
         }
-        return ans + temp;
+        return ans ;
     }
 };
