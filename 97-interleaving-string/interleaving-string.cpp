@@ -1,8 +1,8 @@
 class Solution {
  public:
   bool isInterleave(string s1, string s2, string s3) {
-    const int m = s1.length();
-    const int n = s2.length();
+     int m = s1.length();
+     int n = s2.length();
     if (m + n != s3.length())
       return false;
 
