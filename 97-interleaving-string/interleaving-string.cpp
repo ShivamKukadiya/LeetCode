@@ -6,8 +6,7 @@ class Solution {
     if (m + n != s3.length())
       return false;
 
-    // dp[i][j] := true if s3[0..i + j) is formed by the interleaving of
-    // s1[0..i) and s2[0..j)
+ 
     vector<vector<bool>> dp(m + 1, vector<bool>(n + 1));
     dp[0][0] = true;
 
